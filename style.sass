@@ -275,44 +275,82 @@
             
                 
 // Colorful Layer Effect
+// body
+//     height: 100vh
+//     display: flex
+//     justify-content: center
+//     align-items: center
+//     background-color: #313131     
+                    
+// ul
+//     li
+//         list-style: none
+//         a
+//             display: block
+//             position: relative
+//             color: transparent
+//             -webkit-text-stroke: 1px #fff
+//             font-size: 90px
+//             font-weight: 900
+//             text-decoration: none
+//             &::before, &::after
+//                 content: attr(data-text)
+//                 position: absolute
+//                 top: 0
+//                 left: 0
+//                 transition: 0.6s
+//             &:hover::before
+//                 color: rgb(121, 40, 158)
+//                 z-index: 1
+//                 -webkit-text-stroke: 1px #000
+//                 transform: translate(10px, -10px)
+//             &:hover::after
+//                 color: rgb(52, 43, 179)
+//                 z-index: 2
+//                 -webkit-text-stroke: 1px #000
+//                 transform: translate(20px, -20px)
+
+                
+// Cursor Animation Hover Effect
 body
     height: 100vh
     display: flex
     justify-content: center
     align-items: center
-    background-color: #313131     
-                    
+    background-color: #252839    
+    font-family: "Poppins", sans-serif                
+
 ul
+    position: relative
+    display: flex
+    flex-direction: column
+    gap: 30px
     li
         list-style: none
+        position: relative
         a
-            display: block
-            position: relative
-            color: transparent
-            -webkit-text-stroke: 1px #fff
-            font-size: 90px
-            font-weight: 900
             text-decoration: none
-            &::before, &::after
+            font-size: 4em
+            font-weight: 900
+            text-transform: uppercase
+            position: relative
+            letter-spacing: 2px
+            color: transparent
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6)
+            &::before
                 content: attr(data-text)
                 position: absolute
-                top: 0
-                left: 0
-                transition: 0.6s
+                color: #2d52a3
+                border-right: 9px solid #2d52a3 
+                -webkit-text-stroke: 1px #2d52a3
+                width: 0%
+                overflow: hidden
+                transition: 1s
             &:hover::before
-                color: rgb(121, 40, 158)
-                z-index: 1
-                -webkit-text-stroke: 1px #000
-                transform: translate(10px, -10px)
-            &:hover::after
-                color: rgb(52, 43, 179)
-                z-index: 2
-                -webkit-text-stroke: 1px #000
-                transform: translate(20px, -20px)
-
+                width: 100%
                 
                     
 
-
+    
                         
                                 
