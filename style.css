@@ -9,40 +9,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #252839;
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
 }
 
-ul {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+ul:hover a {
+  color: rgba(0, 0, 0, 0.2);
 }
 ul li {
   list-style: none;
-  position: relative;
 }
 ul li a {
   text-decoration: none;
+  text-transform: uppercase;
+  color: #666;
   font-size: 4em;
   font-weight: 900;
-  text-transform: uppercase;
-  position: relative;
-  letter-spacing: 2px;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+  display: inline-flex;
+  transition: 0.6s;
 }
-ul li a::before {
-  content: attr(data-text);
-  position: absolute;
-  color: #2d52a3;
-  border-right: 9px solid #2d52a3;
-  -webkit-text-stroke: 1px #2d52a3;
-  width: 0%;
-  overflow: hidden;
-  transition: 1s;
-}
-ul li a:hover::before {
-  width: 100%;
+ul li a:hover {
+  color: #000;
+  background-color: #fff;
 }/*# sourceMappingURL=style.css.map */

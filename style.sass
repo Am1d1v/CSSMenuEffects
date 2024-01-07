@@ -312,45 +312,69 @@
 
                 
 // Cursor Animation Hover Effect
+// body
+//     height: 100vh
+//     display: flex
+//     justify-content: center
+//     align-items: center
+//     background-color: #252839    
+//     font-family: "Poppins", sans-serif                
+
+// ul
+//     position: relative
+//     display: flex
+//     flex-direction: column
+//     gap: 30px
+//     li
+//         list-style: none
+//         position: relative
+//         a
+//             text-decoration: none
+//             font-size: 4em
+//             font-weight: 900
+//             text-transform: uppercase
+//             position: relative
+//             letter-spacing: 2px
+//             color: transparent
+//             -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6)
+//             &::before
+//                 content: attr(data-text)
+//                 position: absolute
+//                 color: #2d52a3
+//                 border-right: 9px solid #2d52a3 
+//                 -webkit-text-stroke: 1px #2d52a3
+//                 width: 0%
+//                 overflow: hidden
+//                 transition: 1s
+//             &:hover::before
+//                 width: 100%
+                
+                    
+// Background Color Menu Hover Effect
 body
     height: 100vh
     display: flex
     justify-content: center
-    align-items: center
-    background-color: #252839    
-    font-family: "Poppins", sans-serif                
-
+    align-items: center    
+    font-family: "Poppins", sans-serif       
+    overflow: hidden
+    
 ul
-    position: relative
-    display: flex
-    flex-direction: column
-    gap: 30px
+    &:hover a
+        color: #0003
     li
-        list-style: none
-        position: relative
+        list-style: none  
         a
             text-decoration: none
-            font-size: 4em
-            font-weight: 900
             text-transform: uppercase
-            position: relative
-            letter-spacing: 2px
-            color: transparent
-            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6)
-            &::before
-                content: attr(data-text)
-                position: absolute
-                color: #2d52a3
-                border-right: 9px solid #2d52a3 
-                -webkit-text-stroke: 1px #2d52a3
-                width: 0%
-                overflow: hidden
-                transition: 1s
-            &:hover::before
-                width: 100%
-                
-                    
-
+            color: #666   
+            font-size: 4em     
+            font-weight: 900
+            display: inline-flex    
+            transition: 0.6s 
+            &:hover
+                color: #000
+                background-color: #fff
     
-                        
+                         
                                 
